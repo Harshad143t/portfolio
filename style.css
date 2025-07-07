@@ -235,12 +235,11 @@ background-color: #e9eff1;
 
   .aboutme {
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #34515c;
     width: 95%;
     margin-left: 9px;
     height: 180px;
-    padding-left: 15px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -260,5 +259,29 @@ background-color: #e9eff1;
   #about {
     position: absolute;
     top: 950px;
+  }
+}
+@media (max-width: 360px) and (max-height: 740px) {
+#homeInfo {
+    position: relative;
+    bottom: 10px;
+    width: 400px;
+    height: 400px;
+    margin-left: 10px;
+  }
+  .aboutme {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #34515c;
+    width: 95%;
+    margin-left: 9px;
+    height: 180px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ecf2fa;
+    border-radius: 20px;
+    border: 1px solid;
+    margin-top: 50px;
   }
 }

@@ -50,6 +50,7 @@ background-color: #e9eff1;
   height: 60%;
   max-width: 60vh;
   max-height: 60vh;
+  object-fit: cover;
 }
 
 #homeInfo {
@@ -154,31 +155,34 @@ background-color: #e9eff1;
   transform: scale(1.2);
 }
 
-/*about page */
-
 #about {
   position: relative;
-  bottom: 150px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: left;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
   row-gap: 20px;
-  flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  background-color: #e9eff1;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
-#aboutHeader{ 
+
+#aboutHeader {
   width: 100%;
   height: 50px;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 0px;
 }
-#aboutTag{
+
+#aboutTag {
   text-decoration: none;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 10px;
   border-radius: 9px;
   margin-right: 20px;
   color: #1F2937;
@@ -187,7 +191,45 @@ background-color: #e9eff1;
   transition: background-color 0.4s ease-in, transform 0.3s ease-in;
 }
 
+#aboutPic {
+  flex: 1;
+  max-width: 45%;
+  min-width: 300px;
+  border: 1px solid #1F2937;
+  border-radius: 5%;
+  overflow: hidden;
+}
 
+#aboutPic img {
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  display: block;
+  border-radius: 5%;
+  object-fit: cover;
+}
+
+#aboutTxt {
+  flex: 1;
+  max-width: 60%;
+  min-width: 400px;
+  border-radius: 5%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #566974;
+  font-weight: 500;
+}
+.headers{
+  color: #447D9B;
+  font-size:larger ;
+  font-weight: 600;
+  font-size:x-large;
+  margin-top: 5%;
+}
+.aboutMe{
+  font-size: large;
+  margin-top: 1%;
+}
 /* for phone */
 @media (max-width: 480px) {
   #header {
@@ -252,6 +294,25 @@ background-color: #e9eff1;
     position: absolute;
     top: 850px;
   }
+  #wel {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #name {
+    color:#447D9B;
+    font-size: 30px;
+    text-align: center;
+
+  }
+  .text, #typed-text {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1F2937;
+  }
+  .cursor{
+    font-size:40px ;
+  }
 }
 
 
@@ -283,5 +344,33 @@ background-color: #e9eff1;
     border-radius: 20px;
     border: 1px solid;
     margin-top: 50px;
+  }
+  /*aboutpage*/
+  #aboutTxt {
+  flex: 1;
+  max-width: 60%;
+  min-width: 350px;
+  border-radius: 5%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#wel {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  #name {
+    color:#447D9B;
+    font-size: 30px;
+    text-align: center;
+
+  }
+  .text, #typed-text {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1F2937;
+  }
+  .cursor{
+    font-size:40px ;
   }
 }

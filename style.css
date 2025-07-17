@@ -524,8 +524,8 @@ h3 {
   }
 
   .skills {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     font-size: 0.9rem;
   }
 
@@ -566,7 +566,6 @@ h3 {
   .social-icons {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10px;
     gap: 10px;
     min-width: unset;
   }
@@ -591,4 +590,7 @@ h3 {
     position: absolute;
     top: 1720px;
   }
+   #contact{
+    padding: 3px;
+   }
 }
